@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalogue | OneWay Computer Centre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><header>
+    <h1>Our Product Catalogue</h1>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a> |
+        <a href="order.html">Order</a> |
+        <a href="delivery.html">Delivery</a> |
+        <a href="support.html">Support</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Available Computer Products</h2>
+    <p>
+        Browse our sample product catalogue and compare prices,
+        brands, and stock availability.
+    </p>
+
+    <p><a href="#accessories">Jump to Accessories</a></p>
+
+    <table border="1">
+        <caption>OneWay Computer Centre Product Catalogue</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Product ID</th>
+                <th scope="col">Product</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Price</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Stock Status</th>
+                <th scope="col">Image</th>
+                <th scope="col">Details</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>P001</td>
+                <td>Core i5 Laptop, 8GB RAM</td>
+                <td>ExampleTech</td>
+                <td>₦450,000</td>
+                <td>8</td>
+                <td>In stock</td>
+                <td><img src="images/laptop.jpg"
+                         alt="Core i5 laptop" width="100" height="70"></td>
+                <td><a href="product-details.html">View laptop specifications</a></td>
+            </tr>
+
+            <tr>
+                <td>P002</td>
+                <td>Core i7 Laptop, 16GB RAM</td>
+                <td>ExampleTech</td>
+                <td>₦720,000</td>
+                <td>5</td>
+                <td>Low stock</td>
+                <td><img src="images/laptop.jpg"
+                         alt="Core i7 laptop" width="100" height="70"></td>
+                <td><a href="product-details.html">View laptop specifications</a></td>
+            </tr>
+
+            <tr>
+                <td>P003</td>
+                <td>Desktop Computer, 16GB RAM</td>
+                <td>ExampleTech</td>
+                <td>₦550,000</td>
+                <td>4</td>
+                <td>Low stock</td>
+                <td><img src="images/desktop.jpg"
+                         alt="Desktop computer" width="100" height="70"></td>
+                <td><a href="product-details.html">View product information</a></td>
+            </tr>
+
+            <tr>
+                <td>P004</td>
+                <td>Laser Printer</td>
+                <td>PrintPro</td>
+                <td>₦180,000</td>
+                <td>6</td>
+                <td>In stock</td>
+                <td><img src="images/printer.jpg"
+                         alt="Laser printer" width="100" height="70"></td>
+                <td><a href="product-details.html">View product information</a></td>
+            </tr>
+
+            <tr>
+                <td>P005</td>
+                <td>Wireless Router</td>
+                <td>NetConnect</td>
+                <td>₦45,000</td>
+                <td>12</td>
+                <td>In stock</td>
+                <td><img src="images/router.jpg"
+                         alt="Wireless router" width="100" height="70"></td>
+                <td><a href="product-details.html">View product information</a></td>
+            </tr>
+
+            <tr>
+                <td>P006</td>
+                <td>USB Keyboard</td>
+                <td>KeyWorks</td>
+                <td>₦15,000</td>
+                <td>20</td>
+                <td>In stock</td>
+                <td><img src="images/keyboard.jpg"
+                         alt="USB computer keyboard" width="100" height="70"></td>
+                <td><a href="product-details.html">View product information</a></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="3">Catalogue Note</th>
+                <td colspan="5">
+                    All prices are fictional examination prices.
+                    Confirm availability before ordering.
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>
+        <strong>Stock notice:</strong> Stock levels may change.
+        The figures above are sample data and do not represent live inventory.
+    </p>
+
+    <section id="accessories">
+        <h2>Computer Accessories</h2>
+        <article>
+            <img src="images/keyboard.jpg" alt="USB keyboard accessory"
+                 width="200" height="140">
+            <h3>USB Keyboard</h3>
+            <p>A wired keyboard for compatible desktop and laptop computers.</p>
+            <p>Price: ₦15,000</p>
+            <a href="order.html">Order This Product</a>
+        </article>
+    </section>
+
+    <section>
+        <h2>Laptop Comparison Table</h2>
+        <table border="1">
+            <caption>Comparison of Available Laptop Models</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Specification</th>
+                    <th scope="col" colspan="2">Laptop Models</th>
+                </tr>
+                <tr>
+                    <th scope="col">Feature</th>
+                    <th scope="col">Core i5</th>
+                    <th scope="col">Core i7</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">RAM</th>
+                    <td>8GB</td>
+                    <td>16GB</td>
+                </tr>
+                <tr>
+                    <th scope="row">Storage</th>
+                    <td>512GB SSD</td>
+                    <td>1TB SSD</td>
+                </tr>
+                <tr>
+                    <th scope="row">Screen</th>
+                    <td>15.6 inches</td>
+                    <td>15.6 inches</td>
+                </tr>
+                <tr>
+                    <th scope="row">Price</th>
+                    <td>₦450,000</td>
+                    <td>₦720,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <p><a href="order.html">Proceed to Order Form</a></p>
+</main>
+
+<footer>
+    <p><a href="index.html">Back to Home</a> |
+       <a href="support.html">Contact Support</a></p>
+    <p>&copy; 2026 OneWay Computer Centre.</p>
+</footer>
+</body>
+</html>

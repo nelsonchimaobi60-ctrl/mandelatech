@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form | OneWay Computer Centre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Customer Order Request</h1>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a> |
+        <a href="order.html">Order</a> |
+        <a href="delivery.html">Delivery</a> |
+        <a href="support.html">Support</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Place Your Order Request</h2>
+    <p>
+        Complete this form to request a product. The shop must confirm
+        the price, stock, delivery arrangements, and payment details.
+    </p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Section 1: Customer Details</legend>
+
+            <p>
+                <label for="fullname">Full name:</label><br>
+                <input type="text" id="fullname" name="fullname"
+                       autocomplete="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email address:</label><br>
+                <input type="email" id="email" name="email"
+                       autocomplete="email" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone number:</label><br>
+                <input type="tel" id="phone" name="phone"
+                       autocomplete="tel" required>
+            </p>
+
+            <p>
+                <label for="address">Delivery address:</label><br>
+                <textarea id="address" name="address" rows="4"
+                          autocomplete="street-address" required></textarea>
+            </p>
+
+            <p>
+                <label for="state">State:</label><br>
+                <select id="state" name="state" required>
+                    <option value="">-- Select your state --</option>
+                    <option value="Abia">Abia</option>
+                    <option value="Adamawa">Adamawa</option>
+                    <option value="Akwa Ibom">Akwa Ibom</option>
+                    <option value="Anambra">Anambra</option>
+                    <option value="Bauchi">Bauchi</option>
+                    <option value="Bayelsa">Bayelsa</option>
+                    <option value="Benue">Benue</option>
+                    <option value="Borno">Borno</option>
+                    <option value="Cross River">Cross River</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Ebonyi">Ebonyi</option>
+                    <option value="Edo">Edo</option>
+                    <option value="Ekiti">Ekiti</option>
+                    <option value="Enugu">Enugu</option>
+                    <option value="FCT">Federal Capital Territory</option>
+                    <option value="Gombe">Gombe</option>
+                    <option value="Imo">Imo</option>
+                    <option value="Jigawa">Jigawa</option>
+                    <option value="Kaduna">Kaduna</option>
+                    <option value="Kano">Kano</option>
+                    <option value="Katsina">Katsina</option>
+                    <option value="Kebbi">Kebbi</option>
+                    <option value="Kogi">Kogi</option>
+                    <option value="Kwara">Kwara</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Nasarawa">Nasarawa</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Ogun">Ogun</option>
+                    <option value="Ondo">Ondo</option>
+                    <option value="Osun">Osun</option>
+                    <option value="Oyo">Oyo</option>
+                    <option value="Plateau">Plateau</option>
+                    <option value="Rivers">Rivers</option>
+                    <option value="Sokoto">Sokoto</option>
+                    <option value="Taraba">Taraba</option>
+                    <option value="Yobe">Yobe</option>
+                    <option value="Zamfara">Zamfara</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Section 2: Order Details</legend>
+
+            <p>
+                <label for="product">Choose a product:</label><br>
+                <select id="product" name="product" required>
+                    <option value="">-- Select a product --</option>
+                    <option value="P001">Core i5 Laptop - ₦450,000</option>
+                    <option value="P002">Core i7 Laptop - ₦720,000</option>
+                    <option value="P003">Desktop Computer - ₦550,000</option>
+                    <option value="P004">Laser Printer - ₦180,000</option>
+                    <option value="P005">Wireless Router - ₦45,000</option>
+                    <option value="P006">USB Keyboard - ₦15,000</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="quantity">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity"
+                       min="1" max="20" value="1" required>
+            </p>
+
+            <p>
+                <label for="delivery-date">Preferred delivery date:</label><br>
+                <input type="date" id="delivery-date"
+                       name="delivery-date" required>
+            </p>
+
+            <p>Delivery method:</p>
+
+            <input type="radio" id="pickup" name="delivery-method"
+                   value="pickup" required>
+            <label for="pickup">Shop pickup</label><br>
+
+            <input type="radio" id="standard" name="delivery-method"
+                   value="standard">
+            <label for="standard">Standard delivery</label><br>
+
+            <input type="radio" id="express" name="delivery-method"
+                   value="express">
+            <label for="express">Express delivery</label><br>
+
+            <p>Accessories required:</p>
+
+            <input type="checkbox" id="keyboard" name="accessories[]"
+                   value="keyboard">
+            <label for="keyboard">USB Keyboard</label><br>
+
+            <input type="checkbox" id="router" name="accessories[]"
+                   value="router">
+            <label for="router">Wireless Router</label><br>
+
+            <input type="checkbox" id="printer" name="accessories[]"
+                   value="printer">
+            <label for="printer">Laser Printer</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Section 3: Payment Preference</legend>
+
+            <input type="radio" id="bank-transfer" name="payment"
+                   value="bank-transfer" required>
+            <label for="bank-transfer">Bank transfer</label><br>
+
+            <input type="radio" id="shop-payment" name="payment"
+                   value="shop-payment">
+            <label for="shop-payment">Payment at the shop</label><br>
+
+            <input type="radio" id="card-payment" name="payment"
+                   value="card-payment">
+            <label for="card-payment">Card payment at checkout</label><br>
+
+            <p>
+                <label for="instructions">Additional order instructions:</label><br>
+                <textarea id="instructions" name="instructions"
+                          rows="5"></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Section 4: Confirmation</legend>
+
+            <input type="checkbox" id="confirmation"
+                   name="confirmation" value="confirmed" required>
+            <label for="confirmation">
+                I have reviewed my order details and understand that
+                the shop must confirm availability and the final cost.
+            </label>
+        </fieldset>
+
+        <p>
+            <button type="submit">Submit Order Request</button>
+            <button type="reset">Reset Form</button>
+        </p>
+
+    </form>
+</main>
+
+<footer>
+    <p><a href="products.html">Browse Products</a> |
+       <a href="support.html">Get Support</a></p>
+    <p>&copy; 2026 OneWay Computer Centre.</p>
+</footer>
+    
+</body>
+</html>

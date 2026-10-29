@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support | OneWay Computer Centre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Customer Support</h1>
+    <p>We are here to help with your computer shopping enquiries.</p>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a> |
+        <a href="order.html">Order</a> |
+        <a href="delivery.html">Delivery and Returns</a> |
+        <a href="support.html">Support</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Contact Information</h2>
+
+        <address>
+            OneWay Computer Centre<br>
+            Nigeria<br>
+            Email:
+            <a href="mailto:support@onewaycomputer.example">
+                support@onewaycomputer.example
+            </a><br>
+            Telephone:
+            <a href="tel:+2348000000000">+234 800 000 0000</a>
+        </address>
+
+        <p>
+            Contact us for assistance with product specifications,
+            order enquiries, delivery arrangements, and warranty claims.
+        </p>
+    </section>
+
+    <section>
+        <h2>Customer Enquiry Form</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Your Contact Details</legend>
+
+                <p>
+                    <label for="name">Full name:</label><br>
+                    <input type="text" id="name" name="name"
+                           autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email address:</label><br>
+                    <input type="email" id="email" name="email"
+                           autocomplete="email" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Enquiry</legend>
+
+                <p>
+                    <label for="subject">Enquiry subject:</label><br>
+                    <select id="subject" name="subject" required>
+                        <option value="">-- Select a subject --</option>
+                        <option value="order-status">Order Status</option>
+                        <option value="warranty">Warranty</option>
+                        <option value="delivery">Delivery</option>
+                        <option value="technical-support">Technical Support</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Your message:</label><br>
+                    <textarea id="message" name="message"
+                              rows="6" cols="40" required></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Submit Enquiry</button>
+                <button type="reset">Clear Form</button>
+            </p>
+        </form>
+    </section>
+
+    <section>
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+            <summary>How can I place an order?</summary>
+            <p>
+                Browse the product catalogue, select your product,
+                and complete the order-request form. Wait for the shop
+                to confirm your request.
+            </p>
+        </details>
+
+        <details>
+            <summary>How long does delivery take?</summary>
+            <p>
+                The illustrative policy lists 3–5 business days for
+                standard delivery and 1–2 business days for express
+                delivery. Actual arrangements must be confirmed.
+            </p>
+        </details>
+
+        <details>
+            <summary>Can I collect my order from the shop?</summary>
+            <p>
+                Shop pickup is listed as a sample option. Contact
+                customer support to arrange collection.
+            </p>
+        </details>
+
+        <details>
+            <summary>How do I request a warranty claim?</summary>
+            <p>
+                Keep your proof of purchase and warranty documents,
+                then contact customer support for guidance.
+            </p>
+        </details>
+
+        <details>
+            <summary>Are the listed product prices real market prices?</summary>
+            <p>
+                No. The prices in this examination project are fictional
+                sample prices provided for practicing HTML.
+            </p>
+        </details>
+    </section>
+
+    <section>
+        <h2>Instructional Video</h2>
+        <p>
+            Watch an introductory HTML tutorial to learn more about
+            the technology used to build websites.
+        </p>
+
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/UB1O30fR-EE"
+            width="560"
+            height="315"
+            title="HTML web development instructional video"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+        <p>
+            If the video is unavailable, use the
+            <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development">
+                MDN Web Development Learning Guide
+            </a>.
+        </p>
+    </section>
+
+    <section>
+        <h2>Explore More</h2>
+        <p><a href="products.html">Return to Product Catalogue</a></p>
+        <p><a href="index.html">Back to Homepage</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 OneWay Computer Centre. All rights reserved.</p>
+</footer>
+
+    
+</body>
+</html>
